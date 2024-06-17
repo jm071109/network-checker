@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네트워크 속도 및 느려지는 위치 파악</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">네트워크 속도 및 느려지는 위치 파악</h1>
+        <div id="speed-test" class="mb-5">
+            <button id="start-test" class="btn btn-primary">속도 테스트 시작</button>
+            <div id="speed-result" class="hidden mt-3">
+                <p>다운로드 속도: <span id="download-speed"></span> Mbps</p>
+                <p>업로드 속도: <span id="upload-speed"></span> Mbps</p>
+            </div>
+        </div>
+        <div id="trace-route" class="mb-5">
+            <button id="start-trace" class="btn btn-primary">트레이스 루트 시작</button>
+            <ul id="trace-result" class="list-group mt-3 hidden"></ul>
+        </div>
+        <div id="error-message" class="hidden text-danger">문제가 발생했습니다. 다시 시도해주세요.</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
